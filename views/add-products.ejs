@@ -1,0 +1,40 @@
+<%- include ('partials/header') %>
+
+<div class="jumbotron" style="margin-top: 20px;">
+    <div class="container">
+        <center>
+            <h1 class="display-4">Add Product</h1>
+            <hr>
+            <form action="/product-added" method="POST">
+                <div class="form-group">
+                    <label>Product ID: </label>
+                    <input type="number" class="form-control" style="display:inline-block; width: 30%;"
+                        name="product[id]">
+                </div>
+                <div class="form-group">
+                    <label>Product Name: </label>
+                    <input type="name" class="form-control" style="display:inline-block; width: 30%;"
+                        name="product[name]">
+                </div>
+                <div class="form-group">
+                    <label>Price: </label>
+                    <input type="number" class="form-control" style="display:inline-block; width: 30%;"
+                        name="product[price]">
+                </div>
+                <div class="form-group">
+                    <label>Profit %: </label>
+                    <input type="number" class="form-control" style="display:inline-block; width: 30%;"
+                        name="product[profitPercentage]">
+                </div>
+                <div class="form-group">
+                    <label>Product Type: </label>
+                    <input type="name" class="form-control" style="display:inline-block; width: 30%;"
+                        name="product[productType]">
+                </div>
+                <button type="submit" class="btn btn-primary">Add Product</button>
+            </form>
+        </center>
+    </div>
+</div>
+
+<%- include ('partials/footer') %>
